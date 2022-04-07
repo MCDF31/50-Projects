@@ -1,0 +1,7 @@
+{
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "files.exclude": {
+        "": true
+    }
+}
