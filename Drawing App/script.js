@@ -10,7 +10,7 @@ const ctx = canvas.getContext('2d');
 
 let size = 5
 let isPressed = false
-let color = 'balck'
+let color = 'black'
 let x
 let y
 
