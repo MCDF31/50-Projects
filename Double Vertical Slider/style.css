@@ -9,7 +9,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   height: 100vh;
-  
+
 }
 
 .slider-container {
@@ -27,7 +27,7 @@ body {
   left: 0;
 }
 
-.left-slide > div {
+.left-slide>div {
   height: 100%;
   width: 100%;
   display: flex;
@@ -51,7 +51,7 @@ body {
   width: 65%;
 }
 
-.right-slide > div {
+.right-slide>div {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -60,7 +60,16 @@ body {
 }
 
 button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px
+}
 
+button:hover {
+  color: #222;
 }
 
 .slider-container .action-buttons button {
@@ -70,4 +79,15 @@ button {
   z-index: 100;
 }
 
-.sli
+.slider-container .action-buttons .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
+
+.slider-container .action-buttons .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
