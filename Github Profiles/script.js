@@ -62,27 +62,25 @@ async function getUser(username) {
     }
 
     function addReposToCard(repos) {
-        const reposHTML = repos.map(repo => `
-        <div class="repo">
-            <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-        </div>
-        `).join('')
 
         const reposEl = document.getElementById('repos')
-        reposEl.innerHTML = reposHTML
+
+        repos
+            .forEach(repo => {
+                const repoLink = document.createElement('a')
+            })
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault()
+
+            const user = search.value
+
+            if (user) {
+                getUser(user)
+
+                search.value = " "
+
+            }
+
+        })
     }
-
-    form.addEventListener("submit", (e) => {
-        e.preventDefault()
-
-        const user = search.value
-
-        if (user) {
-            getUser(user)
-
-            search.value = " "
-
-        }
-
-    })
-}
